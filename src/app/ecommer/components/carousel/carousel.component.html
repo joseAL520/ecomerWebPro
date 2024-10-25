@@ -1,0 +1,24 @@
+
+<div class="slider">
+    <div class="slider-track">
+
+
+        <!-- 9  -->
+
+        <div class="slide" *ngFor="let item of productsRulet">
+            <img 
+            [src]="item.image" 
+            alt="icon">
+            <div class="proyect_hover">
+                <div class="contaner-parrafo">
+                    <h3>{{item.title}}</h3>
+                    <button class="btn_more" [routerLink]="['/ecommer/pageProduct', item.id]">Ver Mas</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
